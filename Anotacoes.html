@@ -1,0 +1,52 @@
+Não necessita de nenhum outro framework JS (como Angular/Vue/Etc).
+
+Pode ser utilizado um runner como auxiliar (Karma/Jest/Etc).
+
+Quando criar o arquivo para escrever o teste, sempre colocar spec. antes da extensão.
+
+
+*PREPARANDO O AMBIENTE:
+
+Instalar o node.js
+
+npm init - Inicia o projeto
+
+npm install karma --save-dev
+
+npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev
+
+
+
+
+
+ESTRUTURA BÁSICA:
+
+describe('', () => {
+
+    it('', () => {
+        expect()
+    });
+});
+
+
+Funções globais:
+
+describe -> serve para descrever e organizar a suite (conjunto de casos de teste);
+
+it -> É onde você diz o que o teste faz. Configura e verifica o teste;
+
+expect -> Chamada do evento ou função que será testado usando matchers.
+
+
+
+
+Matchers - É o que testa o valor para determinar se estava correto/verdadeiro ou falso. Um objeto
+que contém métodos e faz a comparação do valor atual com o valor da expectativa.
+
+
+
+
+
+https://jasmine.github.io/pages/docs_home.html
+https://jasmine.github.io/tutorials/your_first_suite
+https://karma-runner.github.io/latest/intro/installation.html
